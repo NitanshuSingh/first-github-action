@@ -1,0 +1,10 @@
+name: my-first-github-action-pipeline
+on: workflow_dispatch #manual trigger
+jobs:
+  job: my-first-job
+    runs-on: ubuntu-latest #agent
+    steps:
+      - name: print Hello World!
+        run: echo "Hello World!"
+      - name: print Goodbye!
+        run: echo "Goodbye!"
