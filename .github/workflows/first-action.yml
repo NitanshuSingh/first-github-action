@@ -3,6 +3,7 @@ on: workflow_dispatch
 
 jobs:
   my-first-job:  # Corrected this line
+    name: my jaanu
     runs-on: ubuntu-latest
     steps:
       - name: print Hello World!
