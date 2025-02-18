@@ -1,8 +1,9 @@
 name: my-first-github-action-pipeline
-on: workflow_dispatch #manual trigger
+on: workflow_dispatch
+
 jobs:
-  job: my-first-job
-    runs-on: ubuntu-latest #agent
+  my-first-job:  # Corrected this line
+    runs-on: ubuntu-latest
     steps:
       - name: print Hello World!
         run: echo "Hello World!"
